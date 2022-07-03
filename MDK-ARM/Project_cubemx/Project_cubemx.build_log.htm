@@ -1,0 +1,675 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.34.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Petr Yurkevich, BMSTU, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.34.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.34.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.8.0
+Dialog DLL:      TCM.DLL V1.48.0.0
+ 
+<h2>Project:</h2>
+C:\Users\petry\YandexDisk\ó÷¸áà\ÍÈÐ\Ïðîãðàììà\Project_cubemx\MDK-ARM\Project_cubemx.uvprojx
+Project File Date:  06/12/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Project_cubemx'
+compiling main.c...
+../Core/Src/main.c(116): error:  #167: argument of type "const arm_rfft_fast_instance_f32 *" is incompatible with parameter of type "arm_rfft_fast_instance_f32 *"
+    arm_rfft_fast_init_f32(&arm_rfft_fast_sR_f32_len2048, NUMBER_VALUES_OF_FEDDBACK_FOURIER);
+../Core/Src/main.c: 0 warnings, 1 error
+compiling stm32f4xx_it.c...
+compiling stm32f4xx_hal_msp.c...
+compiling stm32f4xx_ll_adc.c...
+compiling stm32f4xx_hal_adc_ex.c...
+compiling stm32f4xx_hal_rcc.c...
+compiling stm32f4xx_hal_adc.c...
+compiling stm32f4xx_hal_rcc_ex.c...
+compiling stm32f4xx_hal_flash_ex.c...
+compiling stm32f4xx_hal_flash.c...
+compiling stm32f4xx_hal_flash_ramfunc.c...
+compiling stm32f4xx_hal_gpio.c...
+compiling stm32f4xx_hal_dma_ex.c...
+compiling stm32f4xx_hal_pwr_ex.c...
+compiling stm32f4xx_hal_dma.c...
+compiling stm32f4xx_hal_pwr.c...
+compiling stm32f4xx_hal_exti.c...
+compiling stm32f4xx_hal_cortex.c...
+compiling stm32f4xx_hal.c...
+compiling stm32f4xx_hal_uart.c...
+assembling startup_stm32f401xe.s...
+compiling stm32f4xx_hal_tim_ex.c...
+compiling BasicMathFunctions.c...
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\BasicMathFunctions\arm_abs_f32.c(113): error:  #147-D: declaration is incompatible with "void arm_abs_f32(float32_t *, float32_t *, uint32_t)"  (declared at line 2566 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_abs_f32(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\BasicMathFunctions\arm_abs_q15.c(97): error:  #147-D: declaration is incompatible with "void arm_abs_q15(q15_t *, q15_t *, uint32_t)"  (declared at line 2578 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_abs_q15(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\BasicMathFunctions\arm_abs_q31.c(99): error:  #147-D: declaration is incompatible with "void arm_abs_q31(q31_t *, q31_t *, uint32_t)"  (declared at line 2590 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_abs_q31(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\BasicMathFunctions\arm_abs_q7.c(99): error:  #147-D: declaration is incompatible with "void arm_abs_q7(q7_t *, q7_t *, uint32_t)"  (declared at line 2554 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_abs_q7(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\BasicMathFunctions\arm_add_f32.c(114): error:  #147-D: declaration is incompatible with "void arm_add_f32(float32_t *, float32_t *, float32_t *, uint32_t)"  (declared at line 2381 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_add_f32(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\BasicMathFunctions\arm_add_q15.c(103): error:  #147-D: declaration is incompatible with "void arm_add_q15(q15_t *, q15_t *, q15_t *, uint32_t)"  (declared at line 2409 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_add_q15(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\BasicMathFunctions\arm_add_q31.c(103): error:  #147-D: declaration is incompatible with "void arm_add_q31(q31_t *, q31_t *, q31_t *, uint32_t)"  (declared at line 2423 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_add_q31(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\BasicMathFunctions\arm_add_q7.c(102): error:  #147-D: declaration is incompatible with "void arm_add_q7(q7_t *, q7_t *, q7_t *, uint32_t)"  (declared at line 2395 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_add_q7(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\BasicMathFunctions\arm_dot_prod_f32.c(122): error:  #147-D: declaration is incompatible with "void arm_dot_prod_f32(float32_t *, float32_t *, uint32_t, float32_t *)"  (declared at line 2603 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_dot_prod_f32(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\BasicMathFunctions\arm_dot_prod_q15.c(107): error:  #147-D: declaration is incompatible with "void arm_dot_prod_q15(q15_t *, q15_t *, uint32_t, q63_t *)"  (declared at line 2631 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_dot_prod_q15(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\BasicMathFunctions\arm_dot_prod_q31.c(115): error:  #147-D: declaration is incompatible with "void arm_dot_prod_q31(q31_t *, q31_t *, uint32_t, q63_t *)"  (declared at line 2645 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_dot_prod_q31(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\BasicMathFunctions\arm_dot_prod_q7.c(107): error:  #147-D: declaration is incompatible with "void arm_dot_prod_q7(q7_t *, q7_t *, uint32_t, q31_t *)"  (declared at line 2617 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_dot_prod_q7(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\BasicMathFunctions\arm_mult_f32.c(112): error:  #147-D: declaration is incompatible with "void arm_mult_f32(float32_t *, float32_t *, float32_t *, uint32_t)"  (declared at line 1923 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_mult_f32(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\BasicMathFunctions\arm_mult_q15.c(101): error:  #147-D: declaration is incompatible with "void arm_mult_q15(q15_t *, q15_t *, q15_t *, uint32_t)"  (declared at line 1895 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_mult_q15(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\BasicMathFunctions\arm_mult_q31.c(101): error:  #147-D: declaration is incompatible with "void arm_mult_q31(q31_t *, q31_t *, q31_t *, uint32_t)"  (declared at line 1909 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_mult_q31(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\BasicMathFunctions\arm_mult_q7.c(101): error:  #147-D: declaration is incompatible with "void arm_mult_q7(q7_t *, q7_t *, q7_t *, uint32_t)"  (declared at line 1881 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_mult_q7(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\BasicMathFunctions\arm_negate_f32.c(108): error:  #147-D: declaration is incompatible with "void arm_negate_f32(float32_t *, float32_t *, uint32_t)"  (declared at line 2756 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_negate_f32(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\BasicMathFunctions\arm_negate_q15.c(98): error:  #147-D: declaration is incompatible with "void arm_negate_q15(q15_t *, q15_t *, uint32_t)"  (declared at line 2780 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_negate_q15(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\BasicMathFunctions\arm_negate_q31.c(97): error:  #147-D: declaration is incompatible with "void arm_negate_q31(q31_t *, q31_t *, uint32_t)"  (declared at line 2792 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_negate_q31(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\BasicMathFunctions\arm_negate_q7.c(96): error:  #147-D: declaration is incompatible with "void arm_negate_q7(q7_t *, q7_t *, uint32_t)"  (declared at line 2768 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_negate_q7(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\BasicMathFunctions\arm_offset_f32.c(111): error:  #147-D: declaration is incompatible with "void arm_offset_f32(float32_t *, float32_t, float32_t *, uint32_t)"  (declared at line 2701 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_offset_f32(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\BasicMathFunctions\arm_offset_q15.c(99): error:  #147-D: declaration is incompatible with "void arm_offset_q15(q15_t *, q15_t, q15_t *, uint32_t)"  (declared at line 2729 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_offset_q15(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\BasicMathFunctions\arm_offset_q31.c(99): error:  #147-D: declaration is incompatible with "void arm_offset_q31(q31_t *, q31_t, q31_t *, uint32_t)"  (declared at line 2743 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_offset_q31(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\BasicMathFunctions\arm_offset_q7.c(98): error:  #147-D: declaration is incompatible with "void arm_offset_q7(q7_t *, q7_t, q7_t *, uint32_t)"  (declared at line 2715 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_offset_q7(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\BasicMathFunctions\arm_scale_f32.c(125): error:  #147-D: declaration is incompatible with "void arm_scale_f32(float32_t *, float32_t, float32_t *, uint32_t)"  (declared at line 2493 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_scale_f32(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\BasicMathFunctions\arm_scale_q15.c(110): error:  #147-D: declaration is incompatible with "void arm_scale_q15(q15_t *, q15_t, int8_t, q15_t *, uint32_t)"  (declared at line 2524 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_scale_q15(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\BasicMathFunctions\arm_scale_q31.c(106): error:  #147-D: declaration is incompatible with "void arm_scale_q31(q31_t *, q31_t, int8_t, q31_t *, uint32_t)"  (declared at line 2540 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_scale_q31(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\BasicMathFunctions\arm_scale_q7.c(110): error:  #147-D: declaration is incompatible with "void arm_scale_q7(q7_t *, q7_t, int8_t, q7_t *, uint32_t)"  (declared at line 2508 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_scale_q7(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\BasicMathFunctions\arm_shift_q15.c(102): error:  #147-D: declaration is incompatible with "void arm_shift_q15(q15_t *, int8_t, q15_t *, uint32_t)"  (declared at line 2673 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_shift_q15(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\BasicMathFunctions\arm_shift_q31.c(120): error:  #147-D: declaration is incompatible with "void arm_shift_q31(q31_t *, int8_t, q31_t *, uint32_t)"  (declared at line 2687 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_shift_q31(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\BasicMathFunctions\BasicMathFunctions.c: 0 warnings, 30 errors
+compiling BayesFunctions.c...
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\BayesFunctions\arm_gaussian_naive_bayes_predict_f32.c(339): error:  #20: identifier "arm_gaussian_naive_bayes_instance_f32" is undefined
+  uint32_t arm_gaussian_naive_bayes_predict_f32(const arm_gaussian_naive_bayes_instance_f32 *S, 
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\BayesFunctions\BayesFunctions.c: 0 warnings, 1 error
+compiling stm32f4xx_hal_tim.c...
+compiling ComplexMathFunctions.c...
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\ComplexMathFunctions\arm_cmplx_conj_f32.c(123): error:  #147-D: declaration is incompatible with "void arm_cmplx_conj_f32(float32_t *, float32_t *, uint32_t)"  (declared at line 4643 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_cmplx_conj_f32(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\ComplexMathFunctions\arm_cmplx_conj_q15.c(101): error:  #147-D: declaration is incompatible with "void arm_cmplx_conj_q15(q15_t *, q15_t *, uint32_t)"  (declared at line 4666 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_cmplx_conj_q15(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\ComplexMathFunctions\arm_cmplx_conj_q31.c(107): error:  #147-D: declaration is incompatible with "void arm_cmplx_conj_q31(q31_t *, q31_t *, uint32_t)"  (declared at line 4654 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_cmplx_conj_q31(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\ComplexMathFunctions\arm_cmplx_dot_prod_f32.c(145): error:  #147-D: declaration is incompatible with "void arm_cmplx_dot_prod_f32(float32_t *, float32_t *, uint32_t, float32_t *, float32_t *)"  (declared at line 6367 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_cmplx_dot_prod_f32(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\ComplexMathFunctions\arm_cmplx_dot_prod_q15.c(137): error:  #147-D: declaration is incompatible with "void arm_cmplx_dot_prod_q15(q15_t *, q15_t *, uint32_t, q31_t *, q31_t *)"  (declared at line 6335 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_cmplx_dot_prod_q15(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\ComplexMathFunctions\arm_cmplx_dot_prod_q31.c(124): error:  #147-D: declaration is incompatible with "void arm_cmplx_dot_prod_q31(q31_t *, q31_t *, uint32_t, q63_t *, q63_t *)"  (declared at line 6351 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_cmplx_dot_prod_q31(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\ComplexMathFunctions\arm_cmplx_mag_f32.c(156): error:  #147-D: declaration is incompatible with "void arm_cmplx_mag_f32(float32_t *, float32_t *, uint32_t)"  (declared at line 6297 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_cmplx_mag_f32(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\ComplexMathFunctions\arm_cmplx_mag_q15.c(109): error:  #147-D: declaration is incompatible with "void arm_cmplx_mag_q15(q15_t *, q15_t *, uint32_t)"  (declared at line 6321 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_cmplx_mag_q15(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\ComplexMathFunctions\arm_cmplx_mag_q15.c(197): warning:  #223-D: function "read_q15x2_ia" declared implicitly
+      in = read_q15x2_ia ((q15_t **) &pSrc);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\ComplexMathFunctions\arm_cmplx_mag_q31.c(122): error:  #147-D: declaration is incompatible with "void arm_cmplx_mag_q31(q31_t *, q31_t *, uint32_t)"  (declared at line 6309 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_cmplx_mag_q31(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\ComplexMathFunctions\arm_cmplx_mag_squared_f32.c(122): error:  #147-D: declaration is incompatible with "void arm_cmplx_mag_squared_f32(float32_t *, float32_t *, uint32_t)"  (declared at line 4678 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_cmplx_mag_squared_f32(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\ComplexMathFunctions\arm_cmplx_mag_squared_q15.c(109): error:  #147-D: declaration is incompatible with "void arm_cmplx_mag_squared_q15(q15_t *, q15_t *, uint32_t)"  (declared at line 4702 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_cmplx_mag_squared_q15(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\ComplexMathFunctions\arm_cmplx_mag_squared_q15.c(196): warning:  #223-D: function "read_q15x2_ia" declared implicitly
+      in = read_q15x2_ia ((q15_t **) &pSrc);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\ComplexMathFunctions\arm_cmplx_mag_squared_q31.c(108): error:  #147-D: declaration is incompatible with "void arm_cmplx_mag_squared_q31(q31_t *, q31_t *, uint32_t)"  (declared at line 4690 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_cmplx_mag_squared_q31(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\ComplexMathFunctions\arm_cmplx_mult_cmplx_f32.c(132): error:  #147-D: declaration is incompatible with "void arm_cmplx_mult_cmplx_f32(float32_t *, float32_t *, float32_t *, uint32_t)"  (declared at line 6564 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_cmplx_mult_cmplx_f32(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\ComplexMathFunctions\arm_cmplx_mult_cmplx_q15.c(111): error:  #147-D: declaration is incompatible with "void arm_cmplx_mult_cmplx_q15(q15_t *, q15_t *, q15_t *, uint32_t)"  (declared at line 6536 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_cmplx_mult_cmplx_q15(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\ComplexMathFunctions\arm_cmplx_mult_cmplx_q31.c(109): error:  #147-D: declaration is incompatible with "void arm_cmplx_mult_cmplx_q31(q31_t *, q31_t *, q31_t *, uint32_t)"  (declared at line 6550 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_cmplx_mult_cmplx_q31(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\ComplexMathFunctions\arm_cmplx_mult_real_f32.c(126): error:  #147-D: declaration is incompatible with "void arm_cmplx_mult_real_f32(float32_t *, float32_t *, float32_t *, uint32_t)"  (declared at line 6410 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_cmplx_mult_real_f32(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\ComplexMathFunctions\arm_cmplx_mult_real_q15.c(108): error:  #147-D: declaration is incompatible with "void arm_cmplx_mult_real_q15(q15_t *, q15_t *, q15_t *, uint32_t)"  (declared at line 6382 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_cmplx_mult_real_q15(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\ComplexMathFunctions\arm_cmplx_mult_real_q31.c(108): error:  #147-D: declaration is incompatible with "void arm_cmplx_mult_real_q31(q31_t *, q31_t *, q31_t *, uint32_t)"  (declared at line 6396 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_cmplx_mult_real_q31(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\ComplexMathFunctions\ComplexMathFunctions.c: 2 warnings, 18 errors
+compiling system_stm32f4xx.c...
+compiling ControllerFunctions.c...
+compiling DistanceFunctions.c...
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\DistanceFunctions\arm_cosine_distance_f32.c(54): error:  #167: argument of type "const float32_t *" is incompatible with parameter of type "float32_t *"
+      arm_power_f32(pA, blockSize, &pwra);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\DistanceFunctions\arm_cosine_distance_f32.c(55): error:  #167: argument of type "const float32_t *" is incompatible with parameter of type "float32_t *"
+      arm_power_f32(pB, blockSize, &pwrb);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\DistanceFunctions\arm_cosine_distance_f32.c(57): error:  #167: argument of type "const float32_t *" is incompatible with parameter of type "float32_t *"
+      arm_dot_prod_f32(pA,pB,blockSize,&dot);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\DistanceFunctions\arm_cosine_distance_f32.c(57): error:  #167: argument of type "const float32_t *" is incompatible with parameter of type "float32_t *"
+      arm_dot_prod_f32(pA,pB,blockSize,&dot);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\DistanceFunctions\arm_euclidean_distance_f32.c(138): warning:  #223-D: function "SQ" declared implicitly
+        accum += SQ(tmp);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\DistanceFunctions\DistanceFunctions.c: 1 warning, 4 errors
+compiling CommonTables.c...
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\CommonTables\arm_common_tables.c(24514): error:  #20: identifier "ARMBITREVINDEXTABLEF64_16_TABLE_LENGTH" is undefined
+  const uint16_t armBitRevIndexTableF64_16[ARMBITREVINDEXTABLEF64_16_TABLE_LENGTH] =
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\CommonTables\arm_common_tables.c(24522): error:  #20: identifier "ARMBITREVINDEXTABLEF64_32_TABLE_LENGTH" is undefined
+  const uint16_t armBitRevIndexTableF64_32[ARMBITREVINDEXTABLEF64_32_TABLE_LENGTH] =
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\CommonTables\arm_common_tables.c(24531): error:  #20: identifier "ARMBITREVINDEXTABLEF64_64_TABLE_LENGTH" is undefined
+  const uint16_t armBitRevIndexTableF64_64[ARMBITREVINDEXTABLEF64_64_TABLE_LENGTH] =
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\CommonTables\arm_common_tables.c(24541): error:  #20: identifier "ARMBITREVINDEXTABLEF64_128_TABLE_LENGTH" is undefined
+  const uint16_t armBitRevIndexTableF64_128[ARMBITREVINDEXTABLEF64_128_TABLE_LENGTH] =
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\CommonTables\arm_common_tables.c(24554): error:  #20: identifier "ARMBITREVINDEXTABLEF64_256_TABLE_LENGTH" is undefined
+  const uint16_t armBitRevIndexTableF64_256[ARMBITREVINDEXTABLEF64_256_TABLE_LENGTH] =
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\CommonTables\arm_common_tables.c(24575): error:  #20: identifier "ARMBITREVINDEXTABLEF64_512_TABLE_LENGTH" is undefined
+  const uint16_t armBitRevIndexTableF64_512[ARMBITREVINDEXTABLEF64_512_TABLE_LENGTH] =
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\CommonTables\arm_common_tables.c(24611): error:  #20: identifier "ARMBITREVINDEXTABLEF64_1024_TABLE_LENGTH" is undefined
+  const uint16_t armBitRevIndexTableF64_1024[ARMBITREVINDEXTABLEF64_1024_TABLE_LENGTH] =
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\CommonTables\arm_common_tables.c(24687): error:  #20: identifier "ARMBITREVINDEXTABLEF64_2048_TABLE_LENGTH" is undefined
+  const uint16_t armBitRevIndexTableF64_2048[ARMBITREVINDEXTABLEF64_2048_TABLE_LENGTH] =
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\CommonTables\arm_common_tables.c(24845): error:  #20: identifier "ARMBITREVINDEXTABLEF64_4096_TABLE_LENGTH" is undefined
+  const uint16_t armBitRevIndexTableF64_4096[ARMBITREVINDEXTABLEF64_4096_TABLE_LENGTH] =
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\CommonTables\arm_const_structs.c(41): error:  #20: identifier "arm_cfft_instance_f64" is undefined
+  const arm_cfft_instance_f64 arm_cfft_sR_f64_len16 = {
+KB: Unexpected type: 0
+error type>(42): error:  #28: expression must have a constant value
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\CommonTables\arm_const_structs.c(47): error:  #20: identifier "arm_cfft_instance_f64" is undefined
+  const arm_cfft_instance_f64 arm_cfft_sR_f64_len32 = {
+KB: Unexpected type: 0
+error type>(48): error:  #28: expression must have a constant value
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\CommonTables\arm_const_structs.c(53): error:  #20: identifier "arm_cfft_instance_f64" is undefined
+  const arm_cfft_instance_f64 arm_cfft_sR_f64_len64 = {
+KB: Unexpected type: 0
+error type>(54): error:  #28: expression must have a constant value
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\CommonTables\arm_const_structs.c(59): error:  #20: identifier "arm_cfft_instance_f64" is undefined
+  const arm_cfft_instance_f64 arm_cfft_sR_f64_len128 = {
+KB: Unexpected type: 0
+error type>(60): error:  #28: expression must have a constant value
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\CommonTables\arm_const_structs.c(65): error:  #20: identifier "arm_cfft_instance_f64" is undefined
+  const arm_cfft_instance_f64 arm_cfft_sR_f64_len256 = {
+KB: Unexpected type: 0
+error type>(66): error:  #28: expression must have a constant value
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\CommonTables\arm_const_structs.c(71): error:  #20: identifier "arm_cfft_instance_f64" is undefined
+  const arm_cfft_instance_f64 arm_cfft_sR_f64_len512 = {
+KB: Unexpected type: 0
+error type>(72): error:  #28: expression must have a constant value
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\CommonTables\arm_const_structs.c(77): error:  #20: identifier "arm_cfft_instance_f64" is undefined
+  const arm_cfft_instance_f64 arm_cfft_sR_f64_len1024 = {
+KB: Unexpected type: 0
+error type>(78): error:  #28: expression must have a constant value
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\CommonTables\arm_const_structs.c(83): error:  #20: identifier "arm_cfft_instance_f64" is undefined
+  const arm_cfft_instance_f64 arm_cfft_sR_f64_len2048 = {
+KB: Unexpected type: 0
+error type>(84): error:  #28: expression must have a constant value
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\CommonTables\arm_const_structs.c(89): error:  #20: identifier "arm_cfft_instance_f64" is undefined
+  const arm_cfft_instance_f64 arm_cfft_sR_f64_len4096 = {
+KB: Unexpected type: 0
+error type>(90): error:  #28: expression must have a constant value
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\CommonTables\arm_const_structs.c(293): error:  #20: identifier "arm_rfft_fast_instance_f64" is undefined
+  const arm_rfft_fast_instance_f64 arm_rfft_fast_sR_f64_len32 = {
+KB: Unexpected type: 0
+error type>(294): error:  #28: expression must have a constant value
+    { 16, (const float64_t *)twiddleCoefF64_16, armBitRevIndexTableF64_16, ARMBITREVINDEXTABLEF64_16_TABLE_LENGTH },
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\CommonTables\arm_const_structs.c(301): error:  #20: identifier "arm_rfft_fast_instance_f64" is undefined
+  const arm_rfft_fast_instance_f64 arm_rfft_fast_sR_f64_len64 = {
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\CommonTables\CommonTables.c: 0 warnings, 30 errors
+compiling FastMathFunctions.c...
+compiling FilteringFunctions.c...
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\FilteringFunctions\arm_biquad_cascade_df1_32x64_init_q31.c(69): error:  #147-D: declaration is incompatible with "void arm_biquad_cas_df1_32x64_init_q31(arm_biquad_cas_df1_32x64_ins_q31 *, uint8_t, q31_t *, q63_t *, uint8_t)"  (declared at line 3582 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_biquad_cas_df1_32x64_init_q31(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\FilteringFunctions\arm_biquad_cascade_df1_32x64_init_q31.c(83): error:  #513: a value of type "const q31_t *" cannot be assigned to an entity of type "q31_t *"
+    S->pCoeffs = pCoeffs;
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\FilteringFunctions\arm_biquad_cascade_df1_32x64_q31.c(410): error:  #147-D: declaration is incompatible with "void arm_biquad_cas_df1_32x64_q31(const arm_biquad_cas_df1_32x64_ins_q31 *, q31_t *, q31_t *, uint32_t)"  (declared at line 3568 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_biquad_cas_df1_32x64_q31(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\FilteringFunctions\arm_biquad_cascade_df1_f32.c(506): error:  #147-D: declaration is incompatible with "void arm_biquad_cascade_df1_f32(const arm_biquad_casd_df1_inst_f32 *, float32_t *, float32_t *, uint32_t)"  (declared at line 1330 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_biquad_cascade_df1_f32(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\FilteringFunctions\arm_biquad_cascade_df1_fast_q15.c(60): error:  #147-D: declaration is incompatible with "void arm_biquad_cascade_df1_fast_q15(const arm_biquad_casd_df1_inst_q15 *, q15_t *, q15_t *, uint32_t)"  (declared at line 1272 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_biquad_cascade_df1_fast_q15(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\FilteringFunctions\arm_biquad_cascade_df1_fast_q15.c(82): warning:  #223-D: function "read_q15x2_ia" declared implicitly
+      b0 = read_q15x2_ia ((q15_t **) &pCoeffs);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\FilteringFunctions\arm_biquad_cascade_df1_fast_q15.c(94): warning:  #223-D: function "read_q15x2_da" declared implicitly
+      state_out = read_q15x2_da (&pState);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\FilteringFunctions\arm_biquad_cascade_df1_fast_q15.c(239): warning:  #223-D: function "write_q15x2_ia" declared implicitly
+      write_q15x2_ia(&pState, state_in);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\FilteringFunctions\arm_biquad_cascade_df1_fast_q31.c(62): error:  #147-D: declaration is incompatible with "void arm_biquad_cascade_df1_fast_q31(const arm_biquad_casd_df1_inst_q31 *, q31_t *, q31_t *, uint32_t)"  (declared at line 1300 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_biquad_cascade_df1_fast_q31(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\FilteringFunctions\arm_biquad_cascade_df1_init_f32.c(77): error:  #147-D: declaration is incompatible with "void arm_biquad_cascade_df1_init_f32(arm_biquad_casd_df1_inst_f32 *, uint8_t, float32_t *, float32_t *)"  (declared at line 1344 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_biquad_cascade_df1_init_f32(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\FilteringFunctions\arm_biquad_cascade_df1_init_f32.c(87): error:  #513: a value of type "const float32_t *" cannot be assigned to an entity of type "float32_t *"
+    S->pCoeffs = pCoeffs;
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\FilteringFunctions\arm_biquad_cascade_df1_init_q15.c(71): error:  #147-D: declaration is incompatible with "void arm_biquad_cascade_df1_init_q15(arm_biquad_casd_df1_inst_q15 *, uint8_t, q15_t *, q15_t *, int8_t)"  (declared at line 1257 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_biquad_cascade_df1_init_q15(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\FilteringFunctions\arm_biquad_cascade_df1_init_q15.c(85): error:  #513: a value of type "const q15_t *" cannot be assigned to an entity of type "q15_t *"
+    S->pCoeffs = pCoeffs;
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\FilteringFunctions\arm_biquad_cascade_df1_init_q31.c(70): error:  #147-D: declaration is incompatible with "void arm_biquad_cascade_df1_init_q31(arm_biquad_casd_df1_inst_q31 *, uint8_t, q31_t *, q31_t *, int8_t)"  (declared at line 1315 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_biquad_cascade_df1_init_q31(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\FilteringFunctions\arm_biquad_cascade_df1_init_q31.c(84): error:  #513: a value of type "const q31_t *" cannot be assigned to an entity of type "q31_t *"
+    S->pCoeffs = pCoeffs;
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\FilteringFunctions\arm_biquad_cascade_df1_q15.c(313): error:  #147-D: declaration is incompatible with "void arm_biquad_cascade_df1_q15(const arm_biquad_casd_df1_inst_q15 *, q15_t *, q15_t *, uint32_t)"  (declared at line 1242 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_biquad_cascade_df1_q15(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\FilteringFunctions\arm_biquad_cascade_df1_q15.c(341): warning:  #223-D: function "read_q15x2_ia" declared implicitly
+      b0 = read_q15x2_ia ((q15_t **) &pCoeffs);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\FilteringFunctions\arm_biquad_cascade_df1_q15.c(353): warning:  #223-D: function "read_q15x2_da" declared implicitly
+      state_out = read_q15x2_da (&pState);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\FilteringFunctions\arm_biquad_cascade_df1_q15.c(429): warning:  #223-D: function "write_q15x2_ia" declared implicitly
+        write_q15x2_ia (&pOut, __PKHBT(state_out, out, 16));
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\FilteringFunctions\arm_biquad_cascade_df1_q15.c(514): warning:  #223-D: function "write_q15x2_ia" declared implicitly
+      write_q15x2_ia (&pState, state_in);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\FilteringFunctions\arm_biquad_cascade_df1_q31.c(321): error:  #147-D: declaration is incompatible with "void arm_biquad_cascade_df1_q31(const arm_biquad_casd_df1_inst_q31 *, q31_t *, q31_t *, uint32_t)"  (declared at line 1286 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_biquad_cascade_df1_q31(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\FilteringFunctions\arm_biquad_cascade_df2T_f32.c(347): error:  #147-D: declaration is incompatible with "void arm_biquad_cascade_df2T_f32(const arm_biquad_cascade_df2T_instance_f32 *, float32_t *, float32_t *, uint32_t)"  (declared at line 3628 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_biquad_cascade_df2T_f32(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\FilteringFunctions\arm_biquad_cascade_df2T_f64.c(137): error:  #147-D: declaration is incompatible with "void arm_biquad_cascade_df2T_f64(const arm_biquad_cascade_df2T_instance_f64 *, float64_t *, float64_t *, uint32_t)"  (declared at line 3656 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_biquad_cascade_df2T_f64(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\FilteringFunctions\arm_biquad_cascade_df2T_init_f32.c(190): error:  #147-D: declaration is incompatible with "void arm_biquad_cascade_df2T_init_f32(arm_biquad_cascade_df2T_instance_f32 *, uint8_t, float32_t *, float32_t *)"  (declared at line 3670 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_biquad_cascade_df2T_init_f32(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\FilteringFunctions\arm_biquad_cascade_df2T_init_f32.c(200): error:  #513: a value of type "const float32_t *" cannot be assigned to an entity of type "float32_t *"
+    S->pCoeffs = pCoeffs;
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\FilteringFunctions\arm_biquad_cascade_df2T_init_f64.c(65): error:  #147-D: declaration is incompatible with "void arm_biquad_cascade_df2T_init_f64(arm_biquad_cascade_df2T_instance_f64 *, uint8_t, float64_t *, float64_t *)"  (declared at line 3698 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_biquad_cascade_df2T_init_f64(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\FilteringFunctions\arm_biquad_cascade_df2T_init_f64.c(75): error:  #513: a value of type "const float64_t *" cannot be assigned to an entity of type "float64_t *"
+    S->pCoeffs = pCoeffs;
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\FilteringFunctions\arm_biquad_cascade_stereo_df2T_f32.c(183): error:  #147-D: declaration is incompatible with "void arm_biquad_cascade_stereo_df2T_f32(const arm_biquad_cascade_stereo_df2T_instance_f32 *, float32_t *, float32_t *, uint32_t)"  (declared at line 3642 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_biquad_cascade_stereo_df2T_f32(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\FilteringFunctions\arm_biquad_cascade_stereo_df2T_init_f32.c(65): error:  #147-D: declaration is incompatible with "void arm_biquad_cascade_stereo_df2T_init_f32(arm_biquad_cascade_stereo_df2T_instance_f32 *, uint8_t, float32_t *, float32_t *)"  (declared at line 3684 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_biquad_cascade_stereo_df2T_init_f32(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\FilteringFunctions\arm_biquad_cascade_stereo_df2T_init_f32.c(75): error:  #513: a value of type "const float32_t *" cannot be assigned to an entity of type "float32_t *"
+    S->pCoeffs = pCoeffs;
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\FilteringFunctions\arm_conv_f32.c(246): error:  #147-D: declaration is incompatible with "void arm_conv_f32(float32_t *, uint32_t, float32_t *, uint32_t, float32_t *)"  (declared at line 2902 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_conv_f32(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\FilteringFunctions\arm_conv_fast_opt_q15.c(65): error:  #147-D: declaration is incompatible with "void arm_conv_fast_opt_q15(q15_t *, uint32_t, q15_t *, uint32_t, q15_t *, q15_t *, q15_t *)"  (declared at line 2972 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_conv_fast_opt_q15(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\FilteringFunctions\arm_conv_fast_opt_q15.c(173): error:  #167: argument of type "const q15_t *" is incompatible with parameter of type "q15_t *"
+    arm_copy_q15(pIn1, pScr1, srcALen);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\FilteringFunctions\arm_conv_fast_q15.c(63): error:  #147-D: declaration is incompatible with "void arm_conv_fast_q15(q15_t *, uint32_t, q15_t *, uint32_t, q15_t *)"  (declared at line 2954 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_conv_fast_q15(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\FilteringFunctions\arm_conv_fast_q15.c(203): warning:  #223-D: function "read_q15x2_ia" declared implicitly
+        sum = __SMLADX(read_q15x2_ia ((q15_t **) &px), read_q15x2_da ((q15_t **) &py), sum);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\FilteringFunctions\arm_conv_fast_q15.c(203): warning:  #223-D: function "read_q15x2_da" declared implicitly
+        sum = __SMLADX(read_q15x2_ia ((q15_t **) &px), read_q15x2_da ((q15_t **) &py), sum);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\FilteringFunctions\arm_conv_fast_q15.c(285): warning:  #223-D: function "read_q15x2" declared implicitly
+        x0 = read_q15x2 ((q15_t *) px);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\FilteringFunctions\arm_conv_fast_q15.c(299): warning:  #223-D: function "read_q15x2_da" declared implicitly
+          c0 = read_q15x2_da ((q15_t **) &py);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\FilteringFunctions\arm_conv_fast_q15.c(429): warning:  #223-D: function "write_q15x2_ia" declared implicitly
+        write_q15x2_ia (&pOut, __PKHBT((acc0 >> 15), (acc1 >> 15), 16));
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\FilteringFunctions\arm_conv_fast_q15.c(586): warning:  #223-D: function "read_q15x2_ia" declared implicitly
+        sum = __SMLADX(read_q15x2_ia ((q15_t **) &px), read_q15x2_da ((q15_t **) &py), sum);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\FilteringFunctions\arm_conv_fast_q15.c(586): warning:  #223-D: function "read_q15x2_da" declared implicitly
+        sum = __SMLADX(read_q15x2_ia ((q15_t **) &px), read_q15x2_da ((q15_t **) &py), sum);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\FilteringFunctions\arm_conv_fast_q31.c(63): error:  #147-D: declaration is incompatible with "void arm_conv_fast_q31(q31_t *, uint32_t, q31_t *, uint32_t, q31_t *)"  (declared at line 3006 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_conv_fast_q31(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\FilteringFunctions\arm_conv_opt_q15.c(61): error:  #147-D: declaration is incompatible with "void arm_conv_opt_q15(q15_t *, uint32_t, q15_t *, uint32_t, q15_t *, q15_t *, q15_t *)"  (declared at line 2920 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_conv_opt_q15(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\FilteringFunctions\arm_conv_opt_q15.c(169): error:  #167: argument of type "const q15_t *" is incompatible with parameter of type "q15_t *"
+    arm_copy_q15(pIn1, pScr1, srcALen);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\FilteringFunctions\FilteringFunctions.c: 14 warnings, 30 errors
+compiling SVMFunctions.c...
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\SVMFunctions\arm_svm_linear_init_f32.c(61): error:  #20: identifier "arm_svm_linear_instance_f32" is undefined
+  void arm_svm_linear_init_f32(arm_svm_linear_instance_f32 *S, 
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\SVMFunctions\arm_svm_linear_predict_f32.c(428): error:  #20: identifier "arm_svm_linear_instance_f32" is undefined
+      const arm_svm_linear_instance_f32 *S,
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\SVMFunctions\arm_svm_linear_predict_f32.c(446): warning:  #223-D: function "STEP" declared implicitly
+      *pResult=S->classes[STEP(sum)];
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\SVMFunctions\arm_svm_polynomial_init_f32.c(60): error:  #20: identifier "arm_svm_polynomial_instance_f32" is undefined
+  void arm_svm_polynomial_init_f32(arm_svm_polynomial_instance_f32 *S, 
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\SVMFunctions\arm_svm_polynomial_predict_f32.c(461): error:  #20: identifier "arm_svm_polynomial_instance_f32" is undefined
+      const arm_svm_polynomial_instance_f32 *S,
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\SVMFunctions\arm_svm_polynomial_predict_f32.c(477): warning:  #223-D: function "arm_exponent_f32" declared implicitly
+          sum += S->dualCoefficients[i] * arm_exponent_f32(S->gamma * dot + S->coef0, S->degree);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\SVMFunctions\arm_svm_polynomial_predict_f32.c(480): warning:  #223-D: function "STEP" declared implicitly
+      *pResult=S->classes[STEP(sum)];
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\SVMFunctions\arm_svm_rbf_init_f32.c(56): error:  #20: identifier "arm_svm_rbf_instance_f32" is undefined
+  void arm_svm_rbf_init_f32(arm_svm_rbf_instance_f32 *S, 
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\SVMFunctions\arm_svm_rbf_predict_f32.c(494): error:  #20: identifier "arm_svm_rbf_instance_f32" is undefined
+      const arm_svm_rbf_instance_f32 *S,
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\SVMFunctions\arm_svm_rbf_predict_f32.c(508): warning:  #223-D: function "SQ" declared implicitly
+              dot = dot + SQ(in[j] - *pSupport);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\SVMFunctions\arm_svm_rbf_predict_f32.c(513): warning:  #223-D: function "STEP" declared implicitly
+      *pResult=S->classes[STEP(sum)];
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\SVMFunctions\arm_svm_sigmoid_init_f32.c(57): error:  #20: identifier "arm_svm_sigmoid_instance_f32" is undefined
+  void arm_svm_sigmoid_init_f32(arm_svm_sigmoid_instance_f32 *S, 
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\SVMFunctions\arm_svm_sigmoid_predict_f32.c(459): error:  #20: identifier "arm_svm_sigmoid_instance_f32" is undefined
+      const arm_svm_sigmoid_instance_f32 *S,
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\SVMFunctions\arm_svm_sigmoid_predict_f32.c(477): warning:  #223-D: function "STEP" declared implicitly
+      *pResult=S->classes[STEP(sum)];
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\SVMFunctions\SVMFunctions.c: 6 warnings, 8 errors
+compiling SupportFunctions.c...
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\PrivateInclude\arm_sorting.h(42): error:  #20: identifier "arm_sort_instance_f32" is undefined
+      const arm_sort_instance_f32 * S, 
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\PrivateInclude\arm_sorting.h(54): error:  #20: identifier "arm_sort_instance_f32" is undefined
+      const arm_sort_instance_f32 * S, 
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\PrivateInclude\arm_sorting.h(66): error:  #20: identifier "arm_sort_instance_f32" is undefined
+      const arm_sort_instance_f32 * S, 
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\PrivateInclude\arm_sorting.h(78): error:  #20: identifier "arm_sort_instance_f32" is undefined
+      const arm_sort_instance_f32 * S, 
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\PrivateInclude\arm_sorting.h(90): error:  #20: identifier "arm_sort_instance_f32" is undefined
+      const arm_sort_instance_f32 * S, 
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\PrivateInclude\arm_sorting.h(102): error:  #20: identifier "arm_sort_instance_f32" is undefined
+      const arm_sort_instance_f32 * S,
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\SupportFunctions\arm_bitonic_sort_f32.c(913): error:  #20: identifier "arm_sort_instance_f32" is undefined
+  const arm_sort_instance_f32 * S, 
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\SupportFunctions\arm_bubble_sort_f32.c(61): error:  #20: identifier "arm_sort_instance_f32" is undefined
+    const arm_sort_instance_f32 * S, 
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\SupportFunctions\arm_copy_f32.c(140): error:  #147-D: declaration is incompatible with "void arm_copy_f32(float32_t *, float32_t *, uint32_t)"  (declared at line 2804 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_copy_f32(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\SupportFunctions\arm_copy_q15.c(81): error:  #147-D: declaration is incompatible with "void arm_copy_q15(q15_t *, q15_t *, uint32_t)"  (declared at line 2828 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_copy_q15(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\SupportFunctions\arm_copy_q31.c(84): error:  #147-D: declaration is incompatible with "void arm_copy_q31(q31_t *, q31_t *, uint32_t)"  (declared at line 2840 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_copy_q31(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\SupportFunctions\arm_copy_q7.c(84): error:  #147-D: declaration is incompatible with "void arm_copy_q7(q7_t *, q7_t *, uint32_t)"  (declared at line 2816 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_copy_q7(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\SupportFunctions\arm_heap_sort_f32.c(85): error:  #20: identifier "arm_sort_instance_f32" is undefined
+    const arm_sort_instance_f32 * S, 
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\SupportFunctions\arm_insertion_sort_f32.c(59): error:  #20: identifier "arm_sort_instance_f32" is undefined
+    const arm_sort_instance_f32 * S, 
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\SupportFunctions\arm_merge_sort_f32.c(104): error:  #20: identifier "arm_merge_sort_instance_f32" is undefined
+    const arm_merge_sort_instance_f32 * S, 
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\SupportFunctions\arm_merge_sort_init_f32.c(46): error:  #20: identifier "arm_merge_sort_instance_f32" is undefined
+  void arm_merge_sort_init_f32(arm_merge_sort_instance_f32 * S, arm_sort_dir dir, float32_t * buffer)
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\SupportFunctions\arm_merge_sort_init_f32.c(46): error:  #20: identifier "arm_sort_dir" is undefined
+  void arm_merge_sort_init_f32(arm_merge_sort_instance_f32 * S, arm_sort_dir dir, float32_t * buffer)
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\SupportFunctions\arm_quick_sort_f32.c(159): error:  #20: identifier "arm_sort_instance_f32" is undefined
+    const arm_sort_instance_f32 * S, 
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\SupportFunctions\arm_selection_sort_f32.c(61): error:  #20: identifier "arm_sort_instance_f32" is undefined
+    const arm_sort_instance_f32 * S, 
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\SupportFunctions\arm_sort_f32.c(52): error:  #20: identifier "arm_sort_instance_f32" is undefined
+    const arm_sort_instance_f32 * S, 
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\SupportFunctions\arm_sort_f32.c(59): error:  #20: identifier "ARM_SORT_BITONIC" is undefined
+          case ARM_SORT_BITONIC:
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\SupportFunctions\arm_sort_f32.c(63): error:  #20: identifier "ARM_SORT_BUBBLE" is undefined
+          case ARM_SORT_BUBBLE:
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\SupportFunctions\arm_sort_f32.c(67): error:  #20: identifier "ARM_SORT_HEAP" is undefined
+          case ARM_SORT_HEAP:
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\SupportFunctions\arm_sort_f32.c(71): error:  #20: identifier "ARM_SORT_INSERTION" is undefined
+          case ARM_SORT_INSERTION:
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\SupportFunctions\arm_sort_f32.c(75): error:  #20: identifier "ARM_SORT_QUICK" is undefined
+          case ARM_SORT_QUICK:
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\SupportFunctions\arm_sort_f32.c(79): error:  #20: identifier "ARM_SORT_SELECTION" is undefined
+          case ARM_SORT_SELECTION:
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\SupportFunctions\arm_sort_init_f32.c(47): error:  #20: identifier "arm_sort_instance_f32" is undefined
+  void arm_sort_init_f32(arm_sort_instance_f32 * S, arm_sort_alg alg, arm_sort_dir dir)
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\SupportFunctions\arm_sort_init_f32.c(47): error:  #20: identifier "arm_sort_alg" is undefined
+  void arm_sort_init_f32(arm_sort_instance_f32 * S, arm_sort_alg alg, arm_sort_dir dir)
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\SupportFunctions\arm_sort_init_f32.c(47): error:  #20: identifier "arm_sort_dir" is undefined
+  void arm_sort_init_f32(arm_sort_instance_f32 * S, arm_sort_alg alg, arm_sort_dir dir)
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\SupportFunctions\arm_spline_interp_f32.c(147): error:  #20: identifier "arm_spline_instance_f32" is undefined
+          arm_spline_instance_f32 * S, 
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\SupportFunctions\SupportFunctions.c: 0 warnings, 30 errors
+compiling StatisticsFunctions.c...
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\StatisticsFunctions\arm_logsumexp_dot_prod_f32.c(60): warning:  #223-D: function "arm_logsumexp_f32" declared implicitly
+      result = arm_logsumexp_f32(pTmpBuffer, blockSize);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\StatisticsFunctions\arm_logsumexp_f32.c(230): error:  #159: declaration is incompatible with previous "arm_logsumexp_f32"  (declared at line 60 of "C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\StatisticsFunctions\arm_logsumexp_dot_prod_f32.c")
+  float32_t arm_logsumexp_f32(const float32_t *in, uint32_t blockSize)
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\StatisticsFunctions\arm_max_f32.c(263): error:  #147-D: declaration is incompatible with "void arm_max_f32(float32_t *, uint32_t, float32_t *, uint32_t *)"  (declared at line 6522 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_max_f32(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\StatisticsFunctions\arm_max_q15.c(131): error:  #147-D: declaration is incompatible with "void arm_max_q15(q15_t *, uint32_t, q15_t *, uint32_t *)"  (declared at line 6494 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_max_q15(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\StatisticsFunctions\arm_max_q31.c(134): error:  #147-D: declaration is incompatible with "void arm_max_q31(q31_t *, uint32_t, q31_t *, uint32_t *)"  (declared at line 6508 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_max_q31(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\StatisticsFunctions\arm_max_q7.c(188): error:  #147-D: declaration is incompatible with "void arm_max_q7(q7_t *, uint32_t, q7_t *, uint32_t *)"  (declared at line 6480 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_max_q7(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\StatisticsFunctions\arm_max_no_idx_f32.c(114): error:  #20: identifier "F32_MIN" is undefined
+     float32_t   maxValue = F32_MIN;
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\StatisticsFunctions\arm_mean_f32.c(154): error:  #147-D: declaration is incompatible with "void arm_mean_f32(float32_t *, uint32_t, float32_t *)"  (declared at line 6177 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_mean_f32(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\StatisticsFunctions\arm_mean_q15.c(97): error:  #147-D: declaration is incompatible with "void arm_mean_q15(q15_t *, uint32_t, q15_t *)"  (declared at line 6153 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_mean_q15(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\StatisticsFunctions\arm_mean_q31.c(94): error:  #147-D: declaration is incompatible with "void arm_mean_q31(q31_t *, uint32_t, q31_t *)"  (declared at line 6165 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_mean_q31(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\StatisticsFunctions\arm_mean_q7.c(96): error:  #147-D: declaration is incompatible with "void arm_mean_q7(q7_t *, uint32_t, q7_t *)"  (declared at line 6141 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_mean_q7(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\StatisticsFunctions\arm_min_f32.c(261): error:  #147-D: declaration is incompatible with "void arm_min_f32(float32_t *, uint32_t, float32_t *, uint32_t *)"  (declared at line 6466 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_min_f32(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\StatisticsFunctions\arm_min_q15.c(134): error:  #147-D: declaration is incompatible with "void arm_min_q15(q15_t *, uint32_t, q15_t *, uint32_t *)"  (declared at line 6438 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_min_q15(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\StatisticsFunctions\arm_min_q31.c(133): error:  #147-D: declaration is incompatible with "void arm_min_q31(q31_t *, uint32_t, q31_t *, uint32_t *)"  (declared at line 6452 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_min_q31(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\StatisticsFunctions\arm_min_q7.c(184): error:  #147-D: declaration is incompatible with "void arm_min_q7(q7_t *, uint32_t, q7_t *, uint32_t *)"  (declared at line 6424 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_min_q7(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\StatisticsFunctions\arm_power_f32.c(160): error:  #147-D: declaration is incompatible with "void arm_power_f32(float32_t *, uint32_t, float32_t *)"  (declared at line 6105 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_power_f32(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\StatisticsFunctions\arm_power_q15.c(101): error:  #147-D: declaration is incompatible with "void arm_power_q15(q15_t *, uint32_t, q63_t *)"  (declared at line 6117 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_power_q15(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\StatisticsFunctions\arm_power_q31.c(101): error:  #147-D: declaration is incompatible with "void arm_power_q31(q31_t *, uint32_t, q63_t *)"  (declared at line 6093 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_power_q31(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\StatisticsFunctions\arm_power_q7.c(100): error:  #147-D: declaration is incompatible with "void arm_power_q7(q7_t *, uint32_t, q31_t *)"  (declared at line 6129 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_power_q7(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\StatisticsFunctions\arm_rms_f32.c(127): error:  #147-D: declaration is incompatible with "void arm_rms_f32(float32_t *, uint32_t, float32_t *)"  (declared at line 6225 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_rms_f32(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\StatisticsFunctions\arm_rms_q15.c(72): error:  #147-D: declaration is incompatible with "void arm_rms_q15(q15_t *, uint32_t, q15_t *)"  (declared at line 6249 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_rms_q15(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\StatisticsFunctions\arm_rms_q31.c(76): error:  #147-D: declaration is incompatible with "void arm_rms_q31(q31_t *, uint32_t, q31_t *)"  (declared at line 6237 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_rms_q31(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\StatisticsFunctions\arm_std_f32.c(71): error:  #147-D: declaration is incompatible with "void arm_std_f32(float32_t *, uint32_t, float32_t *)"  (declared at line 6261 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_std_f32(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\StatisticsFunctions\arm_std_f32.c(77): error:  #167: argument of type "const float32_t *" is incompatible with parameter of type "float32_t *"
+    arm_var_f32(pSrc,blockSize,&var);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\StatisticsFunctions\arm_std_q15.c(69): error:  #147-D: declaration is incompatible with "void arm_std_q15(q15_t *, uint32_t, q15_t *)"  (declared at line 6285 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_std_q15(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\StatisticsFunctions\arm_std_q31.c(72): error:  #147-D: declaration is incompatible with "void arm_std_q31(q31_t *, uint32_t, q31_t *)"  (declared at line 6273 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_std_q31(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\StatisticsFunctions\arm_var_f32.c(182): error:  #147-D: declaration is incompatible with "void arm_var_f32(float32_t *, uint32_t, float32_t *)"  (declared at line 6189 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_var_f32(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\StatisticsFunctions\arm_var_q15.c(123): error:  #147-D: declaration is incompatible with "void arm_var_q15(q15_t *, uint32_t, q15_t *)"  (declared at line 6213 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_var_q15(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\StatisticsFunctions\arm_var_q31.c(128): error:  #147-D: declaration is incompatible with "void arm_var_q31(q31_t *, uint32_t, q31_t *)"  (declared at line 6201 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  void arm_var_q31(
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\StatisticsFunctions\StatisticsFunctions.c: 1 warning, 28 errors
+compiling TransformFunctions.c...
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_cfft_f64.c(261): error:  #20: identifier "arm_cfft_instance_f64" is undefined
+    const arm_cfft_instance_f64 * S,
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_cfft_q15.c(777): warning:  #223-D: function "read_q15x2_ia" declared implicitly
+        coeff = read_q15x2_ia ((q15_t **) &pC);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_cfft_q15.c(779): warning:  #223-D: function "read_q15x2" declared implicitly
+        T = read_q15x2 (pSi);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_cfft_q15.c(787): warning:  #223-D: function "write_q15x2_ia" declared implicitly
+        write_q15x2_ia (&pSi, __SHADD16(T, S));
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_cfft_q15.c(876): warning:  #223-D: function "read_q15x2_ia" declared implicitly
+       coeff = read_q15x2_ia ((q15_t **) &pC);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_cfft_q15.c(878): warning:  #223-D: function "read_q15x2" declared implicitly
+       T = read_q15x2 (pSi);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_cfft_q15.c(886): warning:  #223-D: function "write_q15x2_ia" declared implicitly
+       write_q15x2_ia (&pSi, __SHADD16(T, S));
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_cfft_init_f64.c(58): error:  #20: identifier "arm_cfft_instance_f64" is undefined
+    arm_cfft_instance_f64 * S,
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_cfft_init_f64.c(77): error:  #20: identifier "arm_cfft_sR_f64_len4096" is undefined
+              FFTINIT(f64,4096);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_cfft_init_f64.c(85): error:  #20: identifier "arm_cfft_sR_f64_len2048" is undefined
+              FFTINIT(f64,2048);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_cfft_init_f64.c(94): error:  #20: identifier "arm_cfft_sR_f64_len1024" is undefined
+              FFTINIT(f64,1024);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_cfft_init_f64.c(103): error:  #20: identifier "arm_cfft_sR_f64_len512" is undefined
+              FFTINIT(f64,512);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_cfft_init_f64.c(109): error:  #20: identifier "arm_cfft_sR_f64_len256" is undefined
+              FFTINIT(f64,256);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_cfft_init_f64.c(115): error:  #20: identifier "arm_cfft_sR_f64_len128" is undefined
+              FFTINIT(f64,128);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_cfft_init_f64.c(121): error:  #20: identifier "arm_cfft_sR_f64_len64" is undefined
+              FFTINIT(f64,64);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_cfft_init_f64.c(127): error:  #20: identifier "arm_cfft_sR_f64_len32" is undefined
+              FFTINIT(f64,32);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_cfft_init_f64.c(134): error:  #20: identifier "arm_cfft_sR_f64_len16" is undefined
+              FFTINIT(f64,16);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_cfft_radix2_q15.c(111): warning:  #223-D: function "read_q15x2" declared implicitly
+      coeff = read_q15x2 ((q15_t *)pCoef + (ia * 2U));
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_cfft_radix2_q15.c(127): warning:  #223-D: function "write_q15x2" declared implicitly
+      write_q15x2 (pSrc + (2 * i), __SHADD16(T, S));
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_cfft_radix2_q15.c(184): warning:  #223-D: function "read_q15x2" declared implicitly
+        coeff = read_q15x2 ((q15_t *)pCoef + (ia * 2U));
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_cfft_radix2_q15.c(199): warning:  #223-D: function "write_q15x2" declared implicitly
+          write_q15x2 (pSrc + (2 * i), __SHADD16(T, S));
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_cfft_radix2_q15.c(244): warning:  #223-D: function "read_q15x2" declared implicitly
+    coeff = read_q15x2 ((q15_t *)pCoef + (ia * 2U));
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_cfft_radix2_q15.c(259): warning:  #223-D: function "write_q15x2" declared implicitly
+      write_q15x2 (pSrc + (2 * i), __QADD16(T, S));
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_cfft_radix2_q15.c(421): warning:  #223-D: function "read_q15x2" declared implicitly
+      coeff = read_q15x2 ((q15_t *)pCoef + (ia * 2U));
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_cfft_radix2_q15.c(437): warning:  #223-D: function "write_q15x2" declared implicitly
+      write_q15x2 (pSrc + (2 * i), __SHADD16(T, S));
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_cfft_radix2_q15.c(493): warning:  #223-D: function "read_q15x2" declared implicitly
+        coeff = read_q15x2 ((q15_t *)pCoef + (ia * 2U));
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_cfft_radix2_q15.c(508): warning:  #223-D: function "write_q15x2" declared implicitly
+          write_q15x2 (pSrc + (2 * i), __SHADD16(T, S));
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_cfft_radix2_q15.c(556): warning:  #223-D: function "read_q15x2" declared implicitly
+      coeff = read_q15x2 ((q15_t *)pCoef + (ia * 2U));
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_cfft_radix2_q15.c(571): warning:  #223-D: function "write_q15x2" declared implicitly
+        write_q15x2 (pSrc + (2 * i), __QADD16(T, S));
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_cfft_radix4_q15.c(199): warning:  #223-D: function "read_q15x2" declared implicitly
+      T = read_q15x2 (pSi0);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_cfft_radix4_q15.c(235): warning:  #223-D: function "write_q15x2_ia" declared implicitly
+      write_q15x2_ia (&pSi0, __SHADD16(R, T));
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_cfft_radix4_q15.c(349): warning:  #223-D: function "read_q15x2" declared implicitly
+        C1 = read_q15x2 ((q15_t *) pCoef16 + (2U * ic));
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_cfft_radix4_q15.c(393): warning:  #223-D: function "write_q15x2" declared implicitly
+          write_q15x2 (pSi0, out1);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_cfft_radix4_q15.c(498): warning:  #223-D: function "read_q15x2_ia" declared implicitly
+      xaya = read_q15x2_ia ((q15_t **) &ptr1);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_cfft_radix4_q15.c(521): warning:  #223-D: function "write_q15x2_ia" declared implicitly
+      write_q15x2_ia (&ptr1, __SHADD16(R, T));
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_cfft_radix4_q15.c(1069): warning:  #223-D: function "read_q15x2" declared implicitly
+      T = read_q15x2 (pSi0);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_cfft_radix4_q15.c(1101): warning:  #223-D: function "write_q15x2_ia" declared implicitly
+      write_q15x2_ia (&pSi0, __SHADD16(R, T));
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_cfft_radix4_q15.c(1215): warning:  #223-D: function "read_q15x2" declared implicitly
+        C1 = read_q15x2 ((q15_t *) pCoef16 + (2U * ic));
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_cfft_radix4_q15.c(1259): warning:  #223-D: function "write_q15x2" declared implicitly
+          write_q15x2 (pSi0, out1);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_cfft_radix4_q15.c(1361): warning:  #223-D: function "read_q15x2_ia" declared implicitly
+      xaya = read_q15x2_ia ((q15_t **) &ptr1);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_cfft_radix4_q15.c(1384): warning:  #223-D: function "write_q15x2_ia" declared implicitly
+      write_q15x2_ia (&ptr1, __SHADD16(R, T));
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_dct4_f32.c(161): error:  #167: argument of type "const float32_t *" is incompatible with parameter of type "float32_t *"
+    arm_mult_f32(pInlineBuffer, cosFact, pInlineBuffer, S->N);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_dct4_f32.c(385): error:  #167: argument of type "const float32_t *" is incompatible with parameter of type "float32_t *"
+    arm_cmplx_mult_cmplx_f32 (pState, weights, pState, S->N);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_dct4_init_f32.c(92): error:  #20: identifier "Weights_8192" is undefined
+      S->pTwiddle = Weights_8192;
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_dct4_init_f32.c(93): error:  #20: identifier "cos_factors_8192" is undefined
+      S->pCosFactor = cos_factors_8192;
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_dct4_init_f32.c(99): error:  #20: identifier "Weights_2048" is undefined
+      S->pTwiddle = Weights_2048;
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_dct4_init_f32.c(100): error:  #20: identifier "cos_factors_2048" is undefined
+      S->pCosFactor = cos_factors_2048;
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_dct4_init_f32.c(106): error:  #20: identifier "Weights_512" is undefined
+      S->pTwiddle = Weights_512;
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_dct4_init_f32.c(107): error:  #20: identifier "cos_factors_512" is undefined
+      S->pCosFactor = cos_factors_512;
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_dct4_init_f32.c(113): error:  #20: identifier "Weights_128" is undefined
+      S->pTwiddle = Weights_128;
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_dct4_init_f32.c(114): error:  #20: identifier "cos_factors_128" is undefined
+      S->pCosFactor = cos_factors_128;
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_dct4_init_q15.c(91): error:  #20: identifier "WeightsQ15_8192" is undefined
+      S->pTwiddle = WeightsQ15_8192;
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_dct4_init_q15.c(92): error:  #20: identifier "cos_factorsQ15_8192" is undefined
+      S->pCosFactor = cos_factorsQ15_8192;
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_dct4_init_q15.c(98): error:  #20: identifier "WeightsQ15_2048" is undefined
+      S->pTwiddle = WeightsQ15_2048;
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_dct4_init_q15.c(99): error:  #20: identifier "cos_factorsQ15_2048" is undefined
+      S->pCosFactor = cos_factorsQ15_2048;
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_dct4_init_q15.c(105): error:  #20: identifier "WeightsQ15_512" is undefined
+      S->pTwiddle = WeightsQ15_512;
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_dct4_init_q15.c(106): error:  #20: identifier "cos_factorsQ15_512" is undefined
+      S->pCosFactor = cos_factorsQ15_512;
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_dct4_init_q15.c(112): error:  #20: identifier "WeightsQ15_128" is undefined
+      S->pTwiddle = WeightsQ15_128;
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_dct4_init_q15.c(113): error:  #20: identifier "cos_factorsQ15_128" is undefined
+      S->pCosFactor = cos_factorsQ15_128;
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\arm_dct4_init_q31.c(91): error:  #20: identifier "WeightsQ31_8192" is undefined
+      S->pTwiddle = WeightsQ31_8192;
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\TransformFunctions\TransformFunctions.c: 30 warnings, 30 errors
+compiling MatrixFunctions.c...
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\MatrixFunctions\arm_mat_cmplx_mult_q15.c(412): warning:  #223-D: function "write_q15x2" declared implicitly
+          write_q15x2 (px, read_q15x2_ia (&pInB));
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\MatrixFunctions\arm_mat_cmplx_mult_q15.c(412): warning:  #223-D: function "read_q15x2_ia" declared implicitly
+          write_q15x2 (px, read_q15x2_ia (&pInB));
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\MatrixFunctions\arm_mat_cmplx_mult_q15.c(464): warning:  #223-D: function "read_q15x2_ia" declared implicitly
+            pSourceA = read_q15x2_ia ((q15_t **) &pInA);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\MatrixFunctions\arm_mat_cmplx_mult_q15.c(537): warning:  #223-D: function "read_q15x2_ia" declared implicitly
+            pSourceA = read_q15x2_ia ((q15_t **) &pInA);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\MatrixFunctions\arm_mat_mult_fast_q15.c(128): warning:  #223-D: function "read_q15x2_ia" declared implicitly
+          in = read_q15x2_ia ((q15_t **) &pInB);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\MatrixFunctions\arm_mat_mult_fast_q15.c(274): warning:  #223-D: function "read_q15x2_ia" declared implicitly
+            inA1 = read_q15x2_ia ((q15_t **) &pInA);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\MatrixFunctions\arm_mat_mult_fast_q15.c(392): warning:  #223-D: function "read_q15x2_ia" declared implicitly
+            inA1 = read_q15x2_ia ((q15_t **) &pInA);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\MatrixFunctions\arm_mat_mult_fast_q15.c(444): warning:  #223-D: function "read_q15x2_ia" declared implicitly
+            inA1 = read_q15x2_ia ((q15_t **) &pInA);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\MatrixFunctions\arm_mat_mult_q15.c(647): warning:  #223-D: function "read_q15x2_ia" declared implicitly
+          in = read_q15x2_ia ((q15_t **) &pInB);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\MatrixFunctions\arm_mat_mult_q15.c(747): warning:  #223-D: function "read_q15x2_ia" declared implicitly
+            inA1 = read_q15x2_ia ((q15_t **) &pInA);
+C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Source\MatrixFunctions\MatrixFunctions.c: 10 warnings, 0 errors
+"Project_cubemx\Project_cubemx.axf" - 210 Error(s), 64 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+   * Component: DSP Variant: Source Version: 1.8.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.15.0.pack
+                Keil.STM32F4xx_DFP.2.15.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Project_cubemx
+  C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include
+  C:\Users\petry\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\PrivateInclude
+  C:\Users\petry\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+      Include file:  CMSIS\Core\Include\tz_context.h
+
+   * Component: ARM::CMSIS:DSP:Source:1.8.0
+      Source file:   CMSIS\DSP\Source\BasicMathFunctions\BasicMathFunctions.c
+      Include file:  CMSIS\DSP\Include\arm_math.h
+      Source file:   CMSIS\DSP\Source\MatrixFunctions\MatrixFunctions.c
+      Source file:   CMSIS\DSP\Source\StatisticsFunctions\StatisticsFunctions.c
+      Source file:   CMSIS\DSP\Source\CommonTables\CommonTables.c
+      Source file:   CMSIS\DSP\Source\SupportFunctions\SupportFunctions.c
+      Source file:   CMSIS\DSP\Source\ControllerFunctions\ControllerFunctions.c
+      Source file:   CMSIS\DSP\Source\FilteringFunctions\FilteringFunctions.c
+      Source file:   CMSIS\DSP\Source\ComplexMathFunctions\ComplexMathFunctions.c
+      Source file:   CMSIS\DSP\Source\FastMathFunctions\FastMathFunctions.c
+      Source file:   CMSIS\DSP\Source\DistanceFunctions\DistanceFunctions.c
+      Source file:   CMSIS\DSP\Source\TransformFunctions\TransformFunctions.c
+      Source file:   CMSIS\DSP\Source\BayesFunctions\BayesFunctions.c
+      Source file:   CMSIS\DSP\Source\SVMFunctions\SVMFunctions.c
+Target not created.
+Build Time Elapsed:  00:00:26
+</pre>
+</body>
+</html>
